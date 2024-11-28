@@ -1,4 +1,4 @@
-package com.apigateway.models;
+package com.apigateway.ApiGateway.models;
 
 
 import lombok.*;

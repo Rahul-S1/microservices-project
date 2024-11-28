@@ -42,7 +42,7 @@ public class UserServiceImpl implements UserService
 
     }
 
-    @CircuitBreaker(name = "ratinghotelbreaker", fallbackMethod = "fallback")
+    // @CircuitBreaker(name = "ratinghotelbreaker", fallbackMethod = "fallback")
     public User getUser(String id) {
         User user = userRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("User With Given Id is Not Found with id " + id));
